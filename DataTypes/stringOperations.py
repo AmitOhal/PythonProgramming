@@ -72,7 +72,7 @@ print("s[2:-3]->",s[2:-3])      # T
 print("s[3:-4]->",s[2:-4])      # ' ' OR Space
 print("s[0:-2]->",s[0:-2])      # PYTH
 
-print("When BEGIN Index -VE and END is +VE")
+print("When BEGIN Index is -VE and END is +VE")
 print("s[-6:4]->",s[-6:4])      # PYTH
 print("s[-4:5]->",s[-4:5])      # THO
 print("s[-5:5]->",s[-5:5])      # YTHO
@@ -166,6 +166,32 @@ print("s[0:]->",s[0:])         # PYTHON
 print("s[-120:]->",s[-120:])   # PYTHON
 print("s[:100]->",s[:100])     # PYTHON
 print("s[0:6]->",s[0:6])       # PYTHON
+
+print("Syntax #5->stringObject[BEGIN : END : STEP]")
+print("Rule 2 : STEP is +VE -> Forward Direction BEGIN<END?END-1:SPACE")
+print("s[0:6]->",s[0:6])            # PYTHON
+print("s[0:6:1]->",s[0:6:1])        # PYTHON
+print("s[0:6:2]->",s[0:6:2])        # PTO
+print("s[2:6:2]->",s[2:6:2])        # TO
+print("s[1:5:2]->",s[1:5:2])        # YH
+print("s[2:6:3]->",s[2:6:3])        # TN
+print("s[1:6:3]->",s[1:6:3])        # YO
+print("s[1:5:4]->",s[1:5:4])        # Y
+print("s[4:2:1]->",s[4:2:1])        # ' ' OR Space    
+print("s[-6:-1:3]->",s[-6:-1:3])    # PH
+print("s[-6:-1:2]->",s[-6:-1:2])    # PTO
+print("s[-5:-1:3]->",s[-5:-1:3])    # YO
+print("s[-3:-6:1]->",s[-3:-6:1])    # ' '
+print("s[-6:-1:4]->",s[-6:-1:4])    # PO
+
+print("s[::]->",s[::])              # PYTHON
+print("s[:]->",s[:])                # PYTHON
+print("s[::1]->",s[::1])            # PYTHON
+print("s[::2]->",s[::2])            # PTO
+print("s[::3]->",s[::3])            # PH
+print("s[::4]->",s[::4])            # PO
+print("s[::40]->",s[::40])          # P
+
 
 
 
