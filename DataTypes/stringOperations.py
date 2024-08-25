@@ -193,5 +193,80 @@ print("s[::4]->",s[::4])            # PO
 print("s[::40]->",s[::40])          # P
 
 
+print("s[2::2]->",s[2::2])         # TO
+print("s[3::3]->",s[3::3])         # H
+print("s[1::4]->",s[1::4])         # YN
+print("s[2::]->",s[2::])           # THON
+print("s[-6::2]->",s[-6::2])       # PTO
+print("s[-4::1]->",s[-4::1])       # THON
+print("s[-3::3]->",s[-3::3])       # H
 
+#-6    -5   -4   -3   -2   -1
+# P    Y    T    H    O    N
+# 0    1    2    3    4    5
+print("Rule 3 : STEP is -VE -> backward Direction BEGIN>END?END+1:SPACE")
+print("s[4:0:-1]->",s[4:0:-1])                   # OHTY
+print("s[5:2:-1]->",s[5:2:-1])                   # NOH
+print("s[5:1:-1]->",s[5:1:-1])                   # NOHT
+print("s[5:3:-1]->",s[5:3:-1])                   # NO
+print("s[5:2:-1]->",s[5:2:-2])                   # NH
+print("s[5:0:-3]->",s[5:0:-3])                   # NT
+print("s[4:0:-2]->",s[4:0:-2])                   # OT
 
+print("s[-6:-1:-2]->",s[-6:-1:-2])               # ' '
+print("s[-1:-6:-1]->",s[-1:-6:-1])               # NOHTY
+print("s[-1:-6:-2]->",s[-1:-6:-2])               # NHY
+print("s[-2:-7:-2]->",s[-2:-7:-2])               # OTP
+print("s[-2:-20:-2]->",s[-2:-20:-2])             # OTP
+print("s[-1:-4:-3]->",s[-1:-4:-3])               # N
+print("s[::-1]->",s[::-1])                       # NOHTYP
+
+print("Rule 4 : END = 0 and direction is Forward then Space")
+print("s[:0:1]->",s[:0:1])                       # ' '
+print("s[:0:2]->",s[:0:2])                       # ' '
+print("s[:0:3]->",s[:0:3])                       # ' '
+
+print("Rule 5 : END = -1 and direction is Backward then Space")
+print("s[:-1:-1]->",s[:-1:-1])                  # ' '
+print("s[:-1:-2]->",s[:-1:-2])                  # ' '
+print("s[:-1:-3]->",s[:-1:-3])                  # ' '
+
+print("SPECIAL POINTS")
+s="MADAM"
+
+print("MADAM->s[::1]==s[::-1]->",s[::1]==s[::-1])     # True
+# M A D A M
+# M A D A M
+# Palindrome
+s1="LIRIL"
+
+print("LIRIL->s1[::1]==s1[::-1]->",s1[::1]==s1[::-1])    # True
+# L I R I L
+# L I R I L
+# Palindrome
+s2="RACECAR"
+print("RACECAR->s2[::1]==s2[::-1]->",s2[::1]==s2[::-1])    # True
+
+s2="MOM"
+print("MOM->s2[::1]==s2[::-1]->",s2[::1]==s2[::-1])        # True
+
+s2="DAD"
+print("DAD->s2[::1]==s2[::-1]->",s2[::1]==s2[::-1])        # True
+
+s2="MALAYALAM"
+print("MALAYALAM->s2[::1]==s2[::-1]->",s2[::1]==s2[::-1])  # True
+
+s2="RADAR"
+print("RADAR->s2[::1]==s2[::-1]->",s2[::1]==s2[::-1])      # True
+
+s2="WOW"
+print("WOW->s2[::1]==s2[::-1]->",s2[::1]==s2[::-1])        # True
+
+s2="PYTHON"
+print("PYTHON->s2[::1]==s2[::-1]->",s2[::1]==s2[::-1])    # False
+
+s2="JAVA"
+print("JAVA->s2[::1]==s2[::-1]->",s2[::1]==s2[::-1])      # False
+
+s2="1221"
+print("1221->s2[::1]==s2[::-1]->",s2[::1]==s2[::-1])     # True
